@@ -8,7 +8,7 @@ import { Product } from '../common/product';
 })
 export class ProductService {
 
-  private BaseUrl = 'http://localhost:8080/api/products';
+  private BaseUrl = 'http://localhost:8080/api/products?sizq=100';
   constructor(private httpClient: HttpClient) { }
 
   getProductList():Observable<Product[]> {
